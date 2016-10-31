@@ -1,0 +1,18 @@
+extends layout
+
+block content
+
+  #review-form
+    form.form(method="post", enctype="application/x-www-form-urlencoded", action="/save")
+
+      .row
+        label First Name
+        input(type="text", name="first_name")
+      .row
+        label Last Name
+        input(type="text", name="last_name")
+      .row
+        label Nick Name
+        input(type="text", name="nick_name")
+      .row
+        button(type="submit") Save
